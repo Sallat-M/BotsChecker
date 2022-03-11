@@ -8,7 +8,7 @@ from pyrogram.types import Message
 api_id = int(os.environ.get("API_ID"))
 api_hash = os.environ.get("API_HASH")
 session = os.environ.get("String_Session")
-chat = os.environ.get("Channel_ID")
+chat = int(os.environ.get("Channel_ID"))
 offline_mark = os.environ.get("Offline_Mark")
 send_time = int(os.environ.get("Send_Time"))
 time_out = int(os.environ.get("Time_Out"))
