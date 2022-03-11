@@ -1,0 +1,48 @@
+{
+    "name": "Bot Status Checker",
+    "description": "This bot will check bots listed in a channel and add mark if any bot is offline",
+    "keywords": [
+        "telegram",
+        "check",
+        "bot",
+        "offline"
+    ],
+    "repository": "https://github.com/Sallat-M/BotsChecker",
+    "env": {
+        "API_ID": {
+            "description": "Get it from  https://my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get it from  https://my.telegram.org"
+        },
+        "String_Session": {
+            "description": "Pyrogram String Session"
+        },
+        "Channel_ID": {
+            "description": "The channel you want to check bots listed in it"
+        },
+        "Offline_Mark": {
+            "description": "This mark will added after bot username if it is offline",
+            "value": "🔴"
+        },
+        "Send_Time": {
+            "description": "Wait for this period before checking another bot (in seconds)",
+            "value": "6"
+        },
+        "Time_Out": {
+            "description": "Wait for this period for any bot to respond (in seconds)",
+            "value": "10"
+        },
+        "Sleep_Time": {
+            "description": "Wait for this period before checking all bots again (in seconds)",
+            "value": "7200"
+        }
+    },
+    "stack": "heroku-20",
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
