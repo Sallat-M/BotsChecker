@@ -18,6 +18,12 @@
         "String_Session": {
             "description": "Pyrogram String Session"
         },
+        "DataBase_Link": {
+            "description": "MongoDB Link"
+        },
+        "DataBase_Name": {
+            "description": "DataBase Name"
+        },
         "Channel_ID": {
             "description": "The channel you want to check bots listed in it"
         },
@@ -27,11 +33,15 @@
         },
         "Send_Time": {
             "description": "Wait for this period before checking another bot (in seconds)",
-            "value": "6"
+            "value": "7"
+        },
+        "UserName_Time": {
+            "description": "Wait for this period after checking the bot by username (in seconds)",
+            "value": "120"
         },
         "Time_Out": {
             "description": "Wait for this period for any bot to respond (in seconds)",
-            "value": "10"
+            "value": "5"
         },
         "Sleep_Time": {
             "description": "Wait for this period before checking all bots again (in seconds)",
@@ -40,7 +50,7 @@
     },
     "stack": "heroku-20",
     "formation": {
-        "worker": {
+        "web": {
             "quantity": 1,
             "size": "free"
         }
