@@ -1,2 +1,6 @@
 pyrogram==1.2.20
 TgCrypto~=1.2.2
+
+motor==2.4.0
+pymongo==3.11.4
+dnspython~=2.1.0
