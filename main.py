@@ -83,7 +83,7 @@ async def check_msg(msg: Message):
             text += f"\n{line}"
     if edit:
         await msg.edit_text(text, reply_markup=msg.reply_markup)
-    await db_last.update_one({}, {"last": msg.message_id}, upsert=True)
+    await db_last.update_one({}, {"$set": {"last": msg.message_id}}, upsert=True)
 
 
 async def check_bot(username):
